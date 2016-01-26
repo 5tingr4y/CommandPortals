@@ -28,9 +28,11 @@ import org.slf4j.Logger;
 import org.spongepowered.api.Game;
 import org.spongepowered.api.event.Listener;
 import org.spongepowered.api.event.game.state.GameInitializationEvent;
+import org.spongepowered.api.event.network.ClientConnectionEvent;
 import org.spongepowered.api.plugin.Plugin;
+import org.spongepowered.api.text.Text;
 
-@Plugin(id = "commandPortals", name = "Command Portals", version = "0.1")
+@Plugin(id = "commandPortals", name = "Command Portals", version = "0.1-SNAPSHOT")
 public class CommandPortals {
 
     @Inject
@@ -45,7 +47,7 @@ public class CommandPortals {
 
     @Listener
     public void onInit(GameInitializationEvent event) {
-        logger.debug("Hello Sponge!");
+        logger.info("Hello Sponge!");
     }
 
     //statics
